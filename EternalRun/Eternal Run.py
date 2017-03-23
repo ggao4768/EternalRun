@@ -370,7 +370,7 @@ while not game.over:
     else:
         run.draw()
 
-    if run.y <345:
+    if run.y <375:
         landed = False
     else:
         landed = True
@@ -528,6 +528,8 @@ cactus.resizeBy(-75)
 xCoordinate=game.width
 cactus.moveTo(xCoordinate+150,bar.y-80)
 cactus.setSpeed(5,90)
+
+run.moveTo(bar.x-300,bar.y-80)
 
 game.score=10003
 
